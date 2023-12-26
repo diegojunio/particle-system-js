@@ -1,0 +1,9 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
