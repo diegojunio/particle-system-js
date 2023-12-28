@@ -58,10 +58,8 @@ function starShape(x, y){
     context.fillStyle = "white";
     context.fillText("⭐", x, y);
 }
-//var gravity = 0;
 function drawStars() {
     for(let i = 0; i < maxParticles; i++){
-  //      gravity += 0.005;
         sPart = starParticles[i];
 
         if(sPart.pY > frameSize.height)
@@ -75,8 +73,6 @@ function drawStars() {
 
         if(sPart.pX < 0)
             sPart.speedX *= -1;
-
-        //sPart.speedY += gravity;
 
         sPart.pX += sPart.speedX;
         sPart.pY += sPart.speedY;
